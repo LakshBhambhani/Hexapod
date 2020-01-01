@@ -8,10 +8,14 @@ class Quadruped():
     def homePos(self):
         kit.servo[0].angle = 130    #FR HIP
         kit.servo[1].angle = 40     #FL HIP
+        kit.servo[2].angle = 100    #R HIP
+        kit.servo[3].angle = 100     #L HIP
         kit.servo[4].angle = 40    #BR HIP
         kit.servo[5].angle = 130    #BL HIP
-        kit.servo[6].angle = 70     #FR FOOT
+        kit.servo[6].angle = 50     #FR FOOT
         kit.servo[7].angle = 110    #FL FOOT
+        kit.servo[8].angle = 120     #R FOOT
+        kit.servo[9].angle = 0    #L FOOT
         kit.servo[10].angle = 110   #BR FOOT
         kit.servo[11].angle = 70     #BL FOOT
         print('switching to home position')
